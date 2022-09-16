@@ -1,3 +1,5 @@
+/*div{border: 1px solid red;}/*delete*/
+
 .page {
   min-width: 1100px; /* установлена минимальная ширина страницы */
   max-width: 1600px; /* установили ограничение по максимальной ширине */
@@ -11,7 +13,6 @@
   min-height: 600px;
   max-height: 756px; /* установили ограничения для секции */
   background-color: #f2f2f2;
-  z-index: -1;
   position: relative;
   display: flex;
   }
@@ -26,7 +27,6 @@
   left: 64px;
   top: 30px;
 }
-
 .logo_place_footer{
 width: 228px;
 height: 32px;
@@ -111,7 +111,6 @@ height: 32px;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .two-columns__paragraf{
   line-height: 34px;
   font-size: 18px;
@@ -226,7 +225,6 @@ height: 32px;
   height: 890px;
   background-color: #f2f2f2;
   position: relative;
-  z-index: -2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,6 +237,7 @@ height: 32px;
   text-align: center;
   width: 648px;
   margin: 100px auto 70px ;  
+  z-index: 2;
 }
 
 .feynman__subtitle{
@@ -246,6 +245,7 @@ height: 32px;
   line-height: 51px;
   font-weight: normal;
   margin: 0; 
+  z-index: 2;
 }
 
 .feynman__link{
@@ -257,15 +257,16 @@ height: 32px;
   top: 50%;
   right: 48px;
   text-decoration: none;
+  z-index: 3;
 }
 
 .feynman__image{
+  z-index: 1;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 867px;
   height: 637px;
-  z-index: -1;
 }
 
 .kaufman{
