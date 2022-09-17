@@ -1,10 +1,9 @@
-/*div{border: 1px solid red;}/*delete*/
-
 .page {
   min-width: 1100px; /* установлена минимальная ширина страницы */
   max-width: 1600px; /* установили ограничение по максимальной ширине */
   margin: 0 auto; /* для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /* overflow-x: clip; */
 }
 
 /* Шапка сайта */
@@ -15,7 +14,8 @@
   background-color: #f2f2f2;
   position: relative;
   display: flex;
-  }
+  align-items: center;
+}
 
 .logo{
   width: 228px;
@@ -28,8 +28,8 @@
   top: 30px;
 }
 .logo_place_footer{
-width: 228px;
-height: 32px;
+  width: 228px;
+  height: 32px;
 }
 
 .header__title{
@@ -38,9 +38,8 @@ height: 32px;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
-  display: flex;
-  align-items: center;
   padding-left: 64px;
+  margin: 0px;
 }
 
 .header__subtitle{
@@ -52,6 +51,7 @@ height: 32px;
   position: absolute;
   left: 64px;
   bottom: 30px;
+  margin: 0px;
 }
 
 .header__subtitle_link{
@@ -75,10 +75,10 @@ height: 32px;
   right: 0px;
   top: 64px;
   background-color: #2f80ed;
- }
+}
 
 /*Основное содержимое страницы*/
-.content{}
+/*.content{}*/
 
 .description{
   width: 80%;
@@ -87,6 +87,7 @@ height: 32px;
   margin-right: auto;
   margin-top: 100px;;
 }
+
 .two-columns{
   min-height: auto;
   display: flex;
@@ -111,6 +112,7 @@ height: 32px;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .two-columns__paragraf{
   line-height: 34px;
   font-size: 18px;
@@ -190,6 +192,7 @@ height: 32px;
   margin-top: 60px;
   list-style: none;
 }
+
 .table__cell_theme_dark{
   color:white;
   width: 200px;
@@ -200,8 +203,7 @@ height: 32px;
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0px;
 }
 
 .table__heading_theme_dark{
@@ -228,7 +230,7 @@ height: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 
 .feynman__title{
   font-size: 120px;
@@ -236,7 +238,7 @@ height: 32px;
   font-weight: 600;
   text-align: center;
   width: 648px;
-  margin: 100px auto 70px ;  
+  margin: 100px 0 70px ;  
   z-index: 2;
 }
 
@@ -261,12 +263,12 @@ height: 32px;
 }
 
 .feynman__image{
-  z-index: 1;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 867px;
   height: 637px;
+  z-index: 1;
 }
 
 .kaufman{
@@ -279,6 +281,7 @@ height: 32px;
   overflow: hidden;/*чтобы треугольник не выходил за блок*/
   z-index: -2;
 }
+
 .kaufman__triangle{
   width: 877px;
   height: 877px;
@@ -294,6 +297,8 @@ height: 32px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
   min-height: 350px;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .footer__columns{
@@ -317,9 +322,10 @@ height: 32px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 18px 0;
 }
 
-.footer__column_content_info{}
+/*.footer__column_content_info{}*/
 
 .footer__column-heading{
   margin: 0 0 20px;
@@ -337,7 +343,7 @@ height: 32px;
   list-style-type: none;
 }
 
-.footer__column_content_social{}
+/*.footer__column_content_social{}*/
 
 .footer__social-icon{
   width: 16px;
@@ -346,7 +352,7 @@ height: 32px;
   padding: 0px;
 }
 
-  .footer__column-link{
-    color: white;
-    text-decoration: none;
-  }
+.footer__column-link{
+  color: white;
+  text-decoration: none;
+}
