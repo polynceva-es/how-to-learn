@@ -145,6 +145,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
@@ -158,6 +159,7 @@
   width: 60%;
   text-align: center;
   margin: 0;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
