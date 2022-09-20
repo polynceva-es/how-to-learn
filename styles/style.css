@@ -140,7 +140,6 @@
 }
 /*Блок techniques блок cards*/
 .cards {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -148,7 +147,6 @@
 }
 
 .cards__item {
-  border: 1px solid red; /* delete */
   box-sizing: border-box; /* delete */
   display: flex;
   flex-direction: column;
@@ -163,7 +161,6 @@
 } /* delete */
 
 .cards__image {
-  border: 1px solid red;
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -171,7 +168,6 @@
 }
 
 .cards__title {
-  border: 1px solid red;
   margin-bottom: 16px;
   margin-top: 0;
   line-height: 1.15;
@@ -181,7 +177,6 @@
 }
 
 .cards__description {
-  border: 1px solid red;
   text-align: center;
   line-height: 23px;
   font-size: 18px;
@@ -371,16 +366,13 @@
   padding-top: 105px;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .khan__container {
-  border: 1px solid red;
   width: 80%;
 }
 
 .khan__author {
-  border: 1px solid red;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
@@ -388,7 +380,6 @@
 }
 
 .khan__title {
-  border: 1px solid red;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -397,7 +388,6 @@
 
 .khan__quote {
   width: 790px;
-  border: 1px solid red;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -407,7 +397,6 @@
 }
 
 .khan__quote-author {
-  border: 1px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -415,7 +404,6 @@
 }
 
 .khan__quote-author-subline {
-  border: 1px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
@@ -424,7 +412,6 @@
 }
 
 .khan__book-conteiner {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -435,13 +422,13 @@
   width: 608px;
   height: 620px;
   margin-right: 48px;
-  border: 1px solid red;
+  object-fit: cover;
+  object-position: top;
 }
 
 .khan__buy-link {
   color: #2f80ed;
   text-decoration: none;
-  border: 1px solid red;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
