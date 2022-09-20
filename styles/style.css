@@ -81,14 +81,13 @@
 /*Основное содержимое страницы - блок description*/
 
 .description {
-  width: 80%;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   margin-top: 100px;
 }
 
 .two-columns {
+  width: 80%;
   min-height: auto;
   display: flex;
   flex-direction: row;
@@ -126,6 +125,150 @@
 
 .two-columns__span-accent {
   font-weight: 600;
+}
+
+/*Основное содержимое страницы - блок techniques*/
+
+.techniques {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+/*Блок techniques блок cards*/
+.cards {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 920px;
+}
+
+.cards__item {
+  border: 1px solid red; /* delete */
+  box-sizing: border-box; /* delete */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  width: 240px; /* delete */
+  margin-right: 100px; /* delete */
+}
+
+.cards__item:nth-child(3n) {
+  margin-right: 0px;
+} /* delete */
+
+.cards__image {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 0 40px 43px 40px;
+}
+
+.cards__title {
+  border: 1px solid red;
+  margin-bottom: 16px;
+  margin-top: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  border: 1px solid red;
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/*Основное содержимое страницы - блок video*/
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin: 0 20px 0 0;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+/*Основное содержимое страницы - блок oakley*/
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  margin-top: -70px;
+  background-color: #f2f2f2;
+  /*background-size: 100%;*/
+}
+
+/*Основное содержимое страницы - блок feynman*/
+
+.feynman {
+  min-height: 890px;
+  background-color: #f2f2f2;
+  background-image: url("../images/feynman.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feynman__title {
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 600;
+  text-align: center;
+  width: 648px;
+  margin: 100px 0 70px;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  margin: 0;
+  z-index: 2;
+}
+
+.feynman__link {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  z-index: 3;
 }
 
 /*Основное содержимое страницы - блок digits*/
@@ -223,48 +366,85 @@
   color: white;
 }
 
-/*Основное содержимое страницы - блок feynman*/
-
-.feynman {
-  min-height: 890px;
+.khan {
   background-color: #f2f2f2;
-  background-image: url("../images/feynman.png");
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  position: relative;
+  padding-top: 105px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
 }
 
-.feynman__title {
-  font-size: 120px;
-  line-height: 1.15;
-  font-weight: 600;
-  text-align: center;
-  width: 648px;
-  margin: 100px 0 70px;
-  z-index: 2;
+.khan__container {
+  border: 1px solid red;
+  width: 80%;
 }
 
-.feynman__subtitle {
-  font-size: 36px;
-  line-height: 51px;
+.khan__author {
+  border: 1px solid red;
+  line-height: 42px;
+  font-size: 30px;
   font-weight: normal;
   margin: 0;
-  z-index: 2;
 }
 
-.feynman__link {
-  font-size: 36px;
-  line-height: 51px;
+.khan__title {
+  border: 1px solid red;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote {
+  width: 790px;
+  border: 1px solid red;
+  line-height: 34px;
+  font-size: 24px;
   font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  margin-right: 0;
+}
+
+.khan__quote-author {
+  border: 1px solid red;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  border: 1px solid red;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+}
+
+.khan__book-conteiner {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden; /*чтобы картинка не выходила за блок*/
+}
+
+.book-pic {
+  width: 608px;
+  height: 620px;
+  margin-right: 48px;
+  border: 1px solid red;
+}
+
+.khan__buy-link {
   color: #2f80ed;
-  position: absolute;
-  top: 50%;
-  right: 48px;
   text-decoration: none;
-  z-index: 3;
+  border: 1px solid red;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /*Основное содержимое страницы - блок kaufman*/
@@ -289,6 +469,35 @@
   position: absolute;
   top: 0;
   right: -210px;
+}
+
+/*Основное содержимое страницы - блок resources*/
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 1100px; /*width*/
+  margin-top: 80px;
+  border: 1px solid red;
+}
+
+.resources__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px; /*width*/
+  height: 38px;
+  border: 1px solid red;
 }
 
 /*Подвал сайта*/
