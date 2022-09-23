@@ -22,14 +22,14 @@
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
-        <a class="header__link" href="#">Узнать →</a>
+        <a class="header__link link_hover" href="#">Узнать →</a>
       </p>
       <img
         class="header__main-illustration"
         src="./images/header-image.png"
         alt="Опять двойка"
       />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
 
     <!--Основное содержимое сайта-->
@@ -135,9 +135,16 @@
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe class="video__iframe"> </iframe>
-
-          <iframe class="video__iframe"> </iframe>
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+          >
+          </iframe>
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+          >
+          </iframe>
         </div>
       </section>
 
@@ -162,7 +169,7 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="feynman__link" href="#">Подробнее →</a>
+        <a class="feynman__link link_hover" href="#">Подробнее →</a>
       </section>
 
       <section class="digits">
@@ -240,7 +247,7 @@
               src="./images/khan-book.jpg"
               alt="Картинка Весь мир - школа"
             />
-            <a class="khan__buy-link" href="#">Купить книгу →</a>
+            <a class="khan__buy-link link_hover" href="#">Купить книгу →</a>
           </div>
         </div>
       </section>
@@ -253,7 +260,7 @@
           от Джоша Кауфмана
         </p>
 
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
 
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
@@ -325,28 +332,28 @@
           Больше материалов о техниках и лайфхаках обучения
         </p>
         <div class="resources__logo-zone">
-          <a class="resources__link" href="#" target="_blank">
+          <a class="resources__link link_hover" href="#" target="_blank">
             <img
               class="resources__logo"
               src="./images_sprint-2/logo/resources-arzamas.svg"
               alt="Логотип Arzama"
             />
           </a>
-          <a class="resources__link" href="#" target="_blank">
+          <a class="resources__link link_hover" href="#" target="_blank">
             <img
               class="resources__logo"
               src="./images_sprint-2/logo/resources-n1.svg"
               alt="Логотип N+1"
             />
           </a>
-          <a class="resources__link" href="#" target="_blank">
+          <a class="resources__link link_hover" href="#" target="_blank">
             <img
               class="resources__logo"
               src="./images_sprint-2/logo/resources-strelka.svg"
               alt="Логотип STRELKA"
             />
           </a>
-          <a class="resources__link" href="#" target="_blank">
+          <a class="resources__link link_hover" href="#" target="_blank">
             <img
               class="resources__logo"
               src="./images_sprint-2/logo/resources-polka.svg"
@@ -373,13 +380,15 @@
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
             <li>
-              <a class="footer__column-link" href="#"> Главная </a>
+              <a class="footer__column-link link_hover" href="#"> Главная </a>
             </li>
             <li>
-              <a class="footer__column-link" href="#"> Концепция </a>
+              <a class="footer__column-link link_hover" href="#"> Концепция </a>
             </li>
             <li>
-              <a class="footer__column-link" href="#"> Наставники </a>
+              <a class="footer__column-link link_hover" href="#">
+                Наставники
+              </a>
             </li>
           </ul>
         </nav>
@@ -389,7 +398,7 @@
           <ul class="footer__column-links">
             <li>
               <a
-                class="footer__column-link"
+                class="footer__column-link link_hover"
                 href="https://ru-ru.facebook.com"
                 target="_blank"
               >
@@ -404,7 +413,7 @@
 
             <li>
               <a
-                class="footer__column-link"
+                class="footer__column-link link_hover"
                 href="https://vk.com"
                 target="_blank"
               >
@@ -419,7 +428,7 @@
 
             <li>
               <a
-                class="footer__column-link"
+                class="footer__column-link link_hover"
                 href="https://www.instagram.com"
                 target="_blank"
               >
