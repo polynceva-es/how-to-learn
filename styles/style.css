@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px; /* установлена минимальная ширина страницы */
   max-width: 1600px; /* установили ограничение по максимальной ширине */
@@ -85,15 +94,6 @@
   animation: rotation 20s infinite linear;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /*Основное содержимое страницы*/
 /*.content{}*/
 
@@ -166,18 +166,18 @@
 }
 
 .cards__item {
-  box-sizing: border-box; /* delete */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-  width: 240px; /* delete */
-  margin-right: 100px; /* delete */
+  max-width: min-content;
+  margin-right: 100px;
+  text-align: center;
 }
 
 .cards__item:nth-child(3n) {
   margin-right: 0px;
-} /* delete */
+}
 
 .cards__image {
   border-radius: 50%;
@@ -192,11 +192,9 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  text-align: center;
 }
 
 .cards__description {
-  text-align: center;
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
@@ -221,8 +219,6 @@
 }
 
 .video__iframe {
-  width: 515px;
-  height: 316px;
   margin: 0 20px 0 0;
 }
 
