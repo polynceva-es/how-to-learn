@@ -1,0 +1,6 @@
+.khan__book-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden; /*чтобы картинка не выходила за блок*/
+}

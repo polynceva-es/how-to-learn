@@ -1,0 +1,8 @@
+.resources__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px; /*width*/
+  height: 38px;
+}

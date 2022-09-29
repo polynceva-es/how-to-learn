@@ -1,0 +1,4 @@
+.link_hover:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
