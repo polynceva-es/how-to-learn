@@ -3,7 +3,7 @@
   text-decoration: none;
 }
 
-.footer__column-link {
+.footer__column-link:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
