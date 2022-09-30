@@ -2,3 +2,8 @@
   color: #2f80ed;
   text-decoration: none;
 }
+
+.header__link:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}

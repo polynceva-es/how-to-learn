@@ -2,3 +2,8 @@
   color: white;
   text-decoration: none;
 }
+
+.footer__column-link {
+  opacity: 0.5;
+  transition: 0.5s;
+}
