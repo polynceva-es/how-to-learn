@@ -1,4 +1,5 @@
 # Проектная работа "Научиться учиться"
+![image](https://github.com/polynceva-es/how-to-learn/blob/main/How%20to%20learn.gif)
 
 ## 1. Описание проекта
 
